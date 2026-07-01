@@ -7,7 +7,7 @@
     "build": "echo 'Build completed'",
     "start": "echo 'Server started'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["drama", "homepage", "theater"],
+  "author": "Your Name",
   "license": "ISC"
 }
