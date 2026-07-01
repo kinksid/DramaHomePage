@@ -9,7 +9,14 @@
     "cf:whoami": "npm exec --yes wrangler whoami",
     "deploy": "npm exec --yes wrangler deploy"
   },
-  "keywords": ["drama", "homepage", "theater"],
+  "keywords": [
+    "drama",
+    "homepage",
+    "theater"
+  ],
   "author": "Your Name",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.106.0"
+  }
 }
