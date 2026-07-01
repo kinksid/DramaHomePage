@@ -1,0 +1,13 @@
+{
+  "name": "drama-homepage",
+  "version": "1.0.0",
+  "description": "Drama Play Homepage",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "start": "echo 'Server started'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
