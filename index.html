@@ -18,90 +18,358 @@
       </a>
 
       <nav class="nav-links" aria-label="主导航">
-        <a href="#stories">互动短剧</a>
-        <a href="#editor">DramaEditor</a>
-        <a href="#preview">产品预览</a>
+        <a href="#player" data-i18n="nav_player">玩家端</a>
+        <a href="#editor" data-i18n="nav_editor">创作端</a>
+        <a href="#preview" data-i18n="nav_preview">产品预览</a>
       </nav>
 
-      <a class="nav-cta" href="https://thedramaplay.com/world-builder/home">立即内测</a>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="语言切换">
+          <button type="button" data-lang="zh" class="active">中</button>
+          <span class="lang-sep">/</span>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="nav-cta js-open-modal" data-i18n="cta_beta">立即内测</button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">互动短剧 / AI 创作 / 分支剧情</p>
-          <h1>Drama Play<br />让短剧变成可以选择的故事</h1>
-          <p class="hero-lede">
+          <p class="eyebrow" data-i18n="hero_eyebrow">互动短剧 / AI 创作 / 分支剧情</p>
+          <h1 data-i18n="hero_title">Drama Play<br />让短剧变成可以选择的故事</h1>
+          <p class="hero-lede" data-i18n="hero_lede">
             面向移动端互动影游与短剧团队：用 DramaEditor 搭建世界、视频节点和互动分支，再交给玩家亲自推进剧情。
           </p>
           <div class="hero-actions">
-            <a class="primary-button" href="https://thedramaplay.com/world-builder/home">立即内测</a>
-            <a class="secondary-button" href="https://thedramaplay.com/world-builder/home">进入编辑器</a>
+            <button type="button" class="primary-button js-open-modal" data-i18n="cta_beta">立即内测</button>
+            <a class="secondary-button" id="download-editor-btn" href="./Marketing_Materials/DramaEditor.exe" download>
+              <span data-i18n="cta_download_editor">下载编辑器</span>
+            </a>
           </div>
         </div>
 
         <div class="hero-media" aria-label="Drama Play 产品预览">
           <div class="preview-stage">
-            <img
-              src="./Marketing_Materials/DramaPlay_TureShortStyle_Poster_9x16.png"
-              alt="Drama Play 互动短剧海报"
-            />
+            <img src="./Marketing_Materials/DramaPlay_TureShortStyle_Poster_9x16.png" alt="Drama Play 互动短剧海报" />
             <div class="preview-pills" aria-label="互动能力">
-              <span>剧情选择</span>
-              <span>角色陪伴</span>
-              <span>AI 视频</span>
+              <span data-i18n="pill_1">剧情选择</span>
+              <span data-i18n="pill_2">角色陪伴</span>
+              <span data-i18n="pill_3">AI 视频</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="tool-strip" id="stories" aria-label="核心能力">
-        <article>
-          <span>01</span>
-          <h2>互动短剧播放</h2>
-          <p>竖屏剧情、热点选择、分支节点和连续剧集，一套体验承接玩家决策。</p>
-        </article>
-        <article id="editor">
-          <span>02</span>
-          <h2>DramaEditor 创作端</h2>
-          <p>从世界观、角色、地点到视频节点和互动配置，直接生成可测试的 App 数据。</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>AI 制作链路</h2>
-          <p>为短剧团队保留脚本拆分、镜头提示、首帧参考和批量视频制作流程。</p>
-        </article>
+      <section class="feature-section" id="player" aria-label="玩家端">
+        <div class="feature-copy">
+          <p class="eyebrow" data-i18n="player_eyebrow">玩家端</p>
+          <h2 data-i18n="player_title">沉浸式互动短剧体验</h2>
+          <p data-i18n="player_desc">
+            竖屏剧情播放、热点选择、分支节点和连续剧集，玩家在掌中亲自推进故事走向，每一次选择都通向不同的结局。
+          </p>
+          <ul class="feature-list">
+            <li data-i18n="player_f1">竖屏剧情播放，单手即可追剧</li>
+            <li data-i18n="player_f2">分支选择节点，决定剧情走向</li>
+            <li data-i18n="player_f3">角色陪伴互动，沉浸式情感连接</li>
+          </ul>
+        </div>
+        <div class="feature-gallery">
+          <img src="./Marketing_Materials/DramaPlay_AppStore_Preview_1.png" alt="Drama Play 玩家端首页预览" />
+          <img src="./Marketing_Materials/DramaPlay_AppStore_Preview_2.png" alt="Drama Play 玩家端剧情互动预览" />
+          <img src="./Marketing_Materials/DramaPlay_AppStore_Preview_3.png" alt="Drama Play 玩家端角色互动预览" />
+        </div>
+      </section>
+
+      <section class="feature-section reverse" id="editor" aria-label="创作端">
+        <div class="feature-gallery">
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_1.png" alt="DramaEditor 创作端预览 1" />
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_2.png" alt="DramaEditor 创作端预览 2" />
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_3.png" alt="DramaEditor 创作端预览 3" />
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow" data-i18n="editor_eyebrow">创作端</p>
+          <h2 data-i18n="editor_title">DramaEditor 可视化创作</h2>
+          <p data-i18n="editor_desc">
+            从世界观、角色、地点到视频节点和互动配置，团队直接生成可测试的 App 数据，AI 制作链路保留脚本拆分、镜头提示和批量视频流程。
+          </p>
+          <ul class="feature-list">
+            <li data-i18n="editor_f1">世界观、角色、地点结构化搭建</li>
+            <li data-i18n="editor_f2">视频节点与互动分支可视化配置</li>
+            <li data-i18n="editor_f3">AI 脚本拆分、镜头提示、批量出片</li>
+          </ul>
+          <a class="primary-button compact" href="./Marketing_Materials/DramaEditor.exe" download>
+            <span data-i18n="cta_download_editor">下载编辑器</span>
+          </a>
+        </div>
       </section>
 
       <section class="preview-section" id="preview">
         <div>
-          <p class="eyebrow">产品预览</p>
-          <h2>玩家端和创作端保持一条线</h2>
-          <p>
-            首页只保留产品最关键的入口：玩家看到互动短剧，团队进入 DramaEditor 内测，减少上线前不必要的解释和跳转。
+          <p class="eyebrow" data-i18n="preview_eyebrow">产品预览</p>
+          <h2 data-i18n="preview_title">玩家端和创作端保持一条线</h2>
+          <p data-i18n="preview_desc">
+            首页只保留产品最关键的入口：玩家看到互动短剧，团队下载 DramaEditor 进行内测，减少上线前不必要的解释和跳转。
           </p>
-          <a class="primary-button compact" href="https://thedramaplay.com/world-builder/home">打开 DramaEditor</a>
         </div>
         <div class="phone-gallery">
-          <img
-            src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_1.png"
-            alt="Drama Play App 首页预览"
-          />
-          <img
-            src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_2.png"
-            alt="Drama Play 剧情互动预览"
-          />
-          <img
-            src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_3.png"
-            alt="Drama Play 角色聊天预览"
-          />
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_1.png" alt="Drama Play App 首页预览" />
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_2.png" alt="Drama Play 剧情互动预览" />
+          <img src="./Marketing_Materials/DramaPlay_TureShortStyle_AppStore_Preview_4.png" alt="Drama Play 角色聊天预览" />
         </div>
       </section>
     </main>
 
+    <!-- 下载弹窗 -->
+    <div class="modal" id="download-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-content">
+        <button type="button" class="modal-close" data-close aria-label="关闭">×</button>
+        <h3 data-i18n="modal_title">选择下载平台</h3>
+        <p class="modal-sub" data-i18n="modal_sub">立即体验 Drama Play 互动短剧</p>
+        <div class="modal-buttons">
+          <a class="download-option ios" href="https://thedramaplay.com/world-builder/home" target="_blank" rel="noopener">
+            <span class="platform-icon" aria-hidden="true"></span>
+            <span class="platform-text">
+              <small data-i18n="modal_ios_small">iOS</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+          <a class="download-option apk" href="https://thedramaplay.com/world-builder/home" target="_blank" rel="noopener">
+            <span class="platform-icon" aria-hidden="true"></span>
+            <span class="platform-text">
+              <small data-i18n="modal_android_small">Android</small>
+              <strong data-i18n="modal_android">APK 下载</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
-      <strong>Drama Play</strong>
-      <span>互动短剧创作平台</span>
+      <div class="footer-col footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark">▶</span>
+          <strong>Drama Play</strong>
+        </a>
+        <p data-i18n="footer_tagline">互动短剧创作平台</p>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4 data-i18n="footer_contact">联系我们</h4>
+        <ul>
+          <li>
+            <span class="contact-label" data-i18n="footer_email">邮箱</span>
+            <a href="mailto:contact@thedramaplay.com">contact@thedramaplay.com</a>
+          </li>
+          <li>
+            <span class="contact-label" data-i18n="footer_wechat">商务微信</span>
+            <span>DramaPlayBiz</span>
+          </li>
+          <li>
+            <span class="contact-label" data-i18n="footer_company">公司</span>
+            <span data-i18n="footer_company_name">Drama Play Studio</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-share">
+        <h4 data-i18n="footer_share">分享</h4>
+        <div class="share-buttons" id="share-buttons">
+          <!-- 中文社媒 -->
+          <a class="share-btn zh-only" href="https://service.weibo.com/share/share.php?url=https://thedramaplay.com/" target="_blank" rel="noopener" aria-label="微博">
+            <span class="share-icon weibo" aria-hidden="true">W</span>
+            <span data-i18n="share_weibo">微博</span>
+          </a>
+          <a class="share-btn zh-only" href="https://mp.weixin.qq.com/" target="_blank" rel="noopener" aria-label="微信">
+            <span class="share-icon wechat" aria-hidden="true">Wx</span>
+            <span data-i18n="share_wechat">微信</span>
+          </a>
+          <a class="share-btn zh-only" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener" aria-label="小红书">
+            <span class="share-icon xhs" aria-hidden="true">R</span>
+            <span data-i18n="share_xhs">小红书</span>
+          </a>
+          <a class="share-btn zh-only" href="https://www.bilibili.com/" target="_blank" rel="noopener" aria-label="哔哩哔哩">
+            <span class="share-icon bili" aria-hidden="true">B</span>
+            <span data-i18n="share_bili">哔哩哔哩</span>
+          </a>
+          <!-- 英文社媒 -->
+          <a class="share-btn en-only" href="https://twitter.com/intent/tweet?url=https://thedramaplay.com/" target="_blank" rel="noopener" aria-label="Twitter">
+            <span class="share-icon twitter" aria-hidden="true">X</span>
+            <span>Twitter</span>
+          </a>
+          <a class="share-btn en-only" href="https://www.facebook.com/sharer/sharer.php?u=https://thedramaplay.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <span class="share-icon facebook" aria-hidden="true">f</span>
+            <span>Facebook</span>
+          </a>
+          <a class="share-btn en-only" href="https://www.reddit.com/submit?url=https://thedramaplay.com/" target="_blank" rel="noopener" aria-label="Reddit">
+            <span class="share-icon reddit" aria-hidden="true">R</span>
+            <span>Reddit</span>
+          </a>
+          <a class="share-btn en-only" href="https://discord.com/" target="_blank" rel="noopener" aria-label="Discord">
+            <span class="share-icon discord" aria-hidden="true">D</span>
+            <span>Discord</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-copy">
+        <p>© 2026 Drama Play. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <p class="footer-domain">thedramaplay.com</p>
+      </div>
     </footer>
+
+    <script>
+      // ============ 中英文文案 ============
+      var I18N = {
+        zh: {
+          nav_player: "玩家端",
+          nav_editor: "创作端",
+          nav_preview: "产品预览",
+          cta_beta: "立即内测",
+          cta_download_editor: "下载编辑器",
+          hero_eyebrow: "互动短剧 / AI 创作 / 分支剧情",
+          hero_title: "Drama Play<br />让短剧变成可以选择的故事",
+          hero_lede: "面向移动端互动影游与短剧团队：用 DramaEditor 搭建世界、视频节点和互动分支，再交给玩家亲自推进剧情。",
+          pill_1: "剧情选择",
+          pill_2: "角色陪伴",
+          pill_3: "AI 视频",
+          player_eyebrow: "玩家端",
+          player_title: "沉浸式互动短剧体验",
+          player_desc: "竖屏剧情播放、热点选择、分支节点和连续剧集，玩家在掌中亲自推进故事走向，每一次选择都通向不同的结局。",
+          player_f1: "竖屏剧情播放，单手即可追剧",
+          player_f2: "分支选择节点，决定剧情走向",
+          player_f3: "角色陪伴互动，沉浸式情感连接",
+          editor_eyebrow: "创作端",
+          editor_title: "DramaEditor 可视化创作",
+          editor_desc: "从世界观、角色、地点到视频节点和互动配置，团队直接生成可测试的 App 数据，AI 制作链路保留脚本拆分、镜头提示和批量视频流程。",
+          editor_f1: "世界观、角色、地点结构化搭建",
+          editor_f2: "视频节点与互动分支可视化配置",
+          editor_f3: "AI 脚本拆分、镜头提示、批量出片",
+          preview_eyebrow: "产品预览",
+          preview_title: "玩家端和创作端保持一条线",
+          preview_desc: "首页只保留产品最关键的入口：玩家看到互动短剧，团队下载 DramaEditor 进行内测，减少上线前不必要的解释和跳转。",
+          modal_title: "选择下载平台",
+          modal_sub: "立即体验 Drama Play 互动短剧",
+          modal_ios_small: "iOS",
+          modal_android_small: "Android",
+          modal_android: "APK 下载",
+          footer_tagline: "互动短剧创作平台",
+          footer_contact: "联系我们",
+          footer_email: "邮箱",
+          footer_wechat: "商务微信",
+          footer_company: "公司",
+          footer_company_name: "Drama Play Studio",
+          footer_share: "分享",
+          share_weibo: "微博",
+          share_wechat: "微信",
+          share_xhs: "小红书",
+          share_bili: "哔哩哔哩",
+          footer_rights: "保留所有权利。"
+        },
+        en: {
+          nav_player: "Player",
+          nav_editor: "Creator",
+          nav_preview: "Preview",
+          cta_beta: "Join Beta",
+          cta_download_editor: "Download Editor",
+          hero_eyebrow: "Interactive Drama / AI Creation / Branching Story",
+          hero_title: "Drama Play<br />Turn short drama into a story you can choose",
+          hero_lede: "For mobile interactive film-games and short drama teams: build worlds, video nodes and branching choices with DramaEditor, then hand them to players to push the story forward.",
+          pill_1: "Story Choices",
+          pill_2: "Character Companions",
+          pill_3: "AI Video",
+          player_eyebrow: "Player",
+          player_title: "Immersive Interactive Drama",
+          player_desc: "Vertical playback, hotspot choices, branching nodes and episodic series — players drive the story in the palm of their hand, each choice leading to a different ending.",
+          player_f1: "Vertical playback, one-handed viewing",
+          player_f2: "Branching choice nodes, drive the plot",
+          player_f3: "Character companionship, emotional immersion",
+          editor_eyebrow: "Creator",
+          editor_title: "DramaEditor Visual Creation",
+          editor_desc: "From worldview, characters and locations to video nodes and interactive config — generate testable App data directly. The AI pipeline keeps script splitting, shot hints and batch video production.",
+          editor_f1: "Structured worldview, character and location building",
+          editor_f2: "Visual config of video nodes and branching",
+          editor_f3: "AI script splitting, shot hints, batch rendering",
+          preview_eyebrow: "Preview",
+          preview_title: "Player and Creator on one line",
+          preview_desc: "The homepage keeps only the key entry points: players see interactive drama, teams download DramaEditor for beta — less explanation, fewer jumps before launch.",
+          modal_title: "Choose your platform",
+          modal_sub: "Experience Drama Play interactive drama now",
+          modal_ios_small: "iOS",
+          modal_android_small: "Android",
+          modal_android: "APK Download",
+          footer_tagline: "Interactive Drama Creation Platform",
+          footer_contact: "Contact Us",
+          footer_email: "Email",
+          footer_wechat: "Business WeChat",
+          footer_company: "Company",
+          footer_company_name: "Drama Play Studio",
+          footer_share: "Share",
+          share_weibo: "Weibo",
+          share_wechat: "WeChat",
+          share_xhs: "Xiaohongshu",
+          share_bili: "Bilibili",
+          footer_rights: "All rights reserved."
+        }
+      };
+
+      // ============ 语言切换 ============
+      function applyLang(lang) {
+        var dict = I18N[lang] || I18N.zh;
+        document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+          }
+        });
+        // 切换社媒显示
+        document.querySelectorAll(".zh-only").forEach(function (el) {
+          el.style.display = lang === "zh" ? "" : "none";
+        });
+        document.querySelectorAll(".en-only").forEach(function (el) {
+          el.style.display = lang === "en" ? "" : "none";
+        });
+        // 按钮高亮
+        document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+        });
+        try { localStorage.setItem("drama_lang", lang); } catch (e) {}
+      }
+
+      document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyLang(btn.getAttribute("data-lang"));
+        });
+      });
+
+      // 初始语言
+      var savedLang = "zh";
+      try { savedLang = localStorage.getItem("drama_lang") || "zh"; } catch (e) {}
+      applyLang(savedLang);
+
+      // ============ 下载弹窗 ============
+      var modal = document.getElementById("download-modal");
+      function openModal() {
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+      function closeModal() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+      document.querySelectorAll(".js-open-modal").forEach(function (btn) {
+        btn.addEventListener("click", openModal);
+      });
+      document.querySelectorAll("[data-close]").forEach(function (el) {
+        el.addEventListener("click", closeModal);
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeModal();
+      });
+    </script>
   </body>
 </html>
