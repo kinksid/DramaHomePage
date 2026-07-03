@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drama Play | 互动短剧创作平台</title>
+    <meta name="description" content="Drama Play 连接互动短剧观看体验与 DramaEditor 创作端，让短剧可以被选择、被分支、被持续生产。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="Drama Play 首页">
+        <span class="brand-mark">▶</span>
+        <strong>Drama Play</strong>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#player" data-i18n="nav_player">玩家端</a>
+        <a href="#editor" data-i18n="nav_editor">创作端</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="语言切换">
+          <button type="button" data-lang="zh" class="active">中</button>
+          <span class="lang-sep">/</span>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="nav-cta js-open-modal" data-i18n="cta_beta">立即内测</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner reveal">
+          <h1 data-i18n="hero_title">发现可以玩的<br />互动短剧</h1>
+          <p class="hero-lede" data-i18n="hero_lede">面向移动端互动影游与短剧团队：用 DramaEditor 搭建分支剧情，再交给玩家亲手推进故事。</p>
+          <div class="hero-cta">
+            <button type="button" class="btn-primary js-open-modal" data-i18n="cta_beta">立即内测</button>
+            <a class="btn-glass" href="#player" data-i18n="cta_explore">探索玩家端</a>
+          </div>
+          <div class="store-badges">
+            <a class="store-badge-img" href="https://apps.apple.com/app/id6743998659" target="_blank" rel="noopener" aria-label="Download on the App Store">
+              <img src="./assets/logos/download-on-the-app-store-1.svg" alt="Download on the App Store" height="40" />
+            </a>
+            <a class="store-badge-img" href="https://play.google.com/store/apps/details?id=com.dramaplay.app" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+              <img src="./assets/logos/google-play-badge-2022-2.svg" alt="Get it on Google Play" height="40" />
+            </a>
+          </div>
+        </div>
+
+        <!-- 单行截图跑马灯（Mobbin 图1：无手机框 + 顶部标签） -->
+        <div class="marquee-section" aria-label="玩家端界面预览">
+          <div class="marquee-row marquee-left">
+            <div class="marquee-track">
+              <div class="screen-item"><span class="screen-label" data-i18n="label_home">首页</span><img class="screen-shot" src="./assets/screens/home.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_play">播放</span><img class="screen-shot" src="./assets/screens/play.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_branch">分支</span><img class="screen-shot" src="./assets/screens/branch.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_chat">角色互动</span><img class="screen-shot" src="./assets/screens/chat.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_interact">热点互动</span><img class="screen-shot" src="./assets/screens/interact.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_discover">发现</span><img class="screen-shot" src="./assets/screens/discover.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_profile">我的</span><img class="screen-shot" src="./assets/screens/profile.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_home">首页</span><img class="screen-shot" src="./assets/screens/home.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_play">播放</span><img class="screen-shot" src="./assets/screens/play.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_branch">分支</span><img class="screen-shot" src="./assets/screens/branch.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_chat">角色互动</span><img class="screen-shot" src="./assets/screens/chat.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_interact">热点互动</span><img class="screen-shot" src="./assets/screens/interact.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_discover">发现</span><img class="screen-shot" src="./assets/screens/discover.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="screen-item"><span class="screen-label" data-i18n="label_profile">我的</span><img class="screen-shot" src="./assets/screens/profile.png" alt="" loading="lazy" decoding="async" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 专家背书（Mobbin 图3 评语卡片） -->
+      <section class="testimonials-section reveal" aria-label="专家背书">
+        <h2 data-i18n="testimonials_title">行业专家怎么说</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card glass">
+            <p class="testimonial-tag" data-i18n="testimonial_1_tag">好莱坞高管评语</p>
+            <blockquote data-i18n="testimonial_1_quote">「Drama Play 让互动叙事终于有了电影级的质感——AI 懂节奏、懂情绪、懂角色。这不是游戏，这是你主演的剧。」</blockquote>
+            <footer data-i18n="testimonial_1_author">—— 某好莱坞影视公司数字内容副总裁</footer>
+          </article>
+          <article class="testimonial-card glass">
+            <p class="testimonial-tag" data-i18n="testimonial_2_tag">游戏大厂工程师评语</p>
+            <blockquote data-i18n="testimonial_2_quote">「Drama Editor 是我用过最顺手的互动叙事工具——架构干净、AI 辅助实用、性能扎实。编剧能上手，引擎扛得住，这才是创作该有的样子。」</blockquote>
+            <footer data-i18n="testimonial_2_author">—— 某 AAA 游戏工作室技术总监</footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- 玩家端 Tab 画廊（无手机框） -->
+      <section class="player-section" id="player" aria-label="玩家端">
+        <div class="section-header reveal">
+          <h2 data-i18n="player_title">秒找互动剧情模式</h2>
+          <p data-i18n="player_desc">首页、剧情分支、角色陪伴、发现与消息 — 完整玩家端体验，一手掌握。</p>
+        </div>
+        <div class="tab-bar glass reveal" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="home" data-i18n="tab_home">首页</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="story" data-i18n="tab_story">剧情</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="chat" data-i18n="tab_chat">角色互动</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="discover" data-i18n="tab_discover">发现</button>
+        </div>
+        <div class="tab-panels reveal">
+          <div class="tab-panel active" data-panel="home">
+            <div class="screen-grid">
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/home.png" alt="Drama Play 首页" loading="lazy" decoding="async" /><span data-i18n="screen_home">剧集首页</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/play.png" alt="剧情播放" loading="lazy" decoding="async" /><span data-i18n="screen_play">竖屏播放</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/interact.png" alt="互动选择" loading="lazy" decoding="async" /><span data-i18n="screen_interact">热点互动</span></div>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="story">
+            <div class="screen-grid">
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/branch.png" alt="分支剧情" loading="lazy" decoding="async" /><span data-i18n="screen_branch">分支选择</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/story-1.png" alt="剧情线 1" loading="lazy" decoding="async" /><span data-i18n="screen_story1">主线剧情</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/story-2.png" alt="剧情线 2" loading="lazy" decoding="async" /><span data-i18n="screen_story2">隐藏分支</span></div>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="chat">
+            <div class="screen-grid">
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/chat.png" alt="角色聊天" loading="lazy" decoding="async" /><span data-i18n="screen_chat">角色陪伴</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/story-3.png" alt="角色互动" loading="lazy" decoding="async" /><span data-i18n="screen_companion">心动陪伴</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/profile.png" alt="个人中心" loading="lazy" decoding="async" /><span data-i18n="screen_profile">我的</span></div>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="discover">
+            <div class="screen-grid">
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/discover.png" alt="发现页" loading="lazy" decoding="async" /><span data-i18n="screen_discover">发现推荐</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/story-4.png" alt="推荐剧集" loading="lazy" decoding="async" /><span data-i18n="screen_recommend">热门短剧</span></div>
+              <div class="screen-card"><img class="screen-shot lg" src="./assets/screens/story-5.png" alt="更多内容" loading="lazy" decoding="async" /><span data-i18n="screen_more">更多精彩</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="editor-section" id="editor" aria-label="创作端">
+        <div class="editor-layout">
+          <div class="editor-copy reveal">
+            <p class="section-eyebrow" data-i18n="editor_eyebrow">创作端</p>
+            <h2 data-i18n="editor_title">探索完整创作旅程</h2>
+            <p data-i18n="editor_desc">DramaEditor 无限故事画布：拖拽连接视频节点、互动分支与结局，一键生成可测试 App 数据。</p>
+            <ul class="feature-list">
+              <li data-i18n="editor_f1">世界观、角色、地点结构化搭建</li>
+              <li data-i18n="editor_f2">视频节点与互动分支可视化配置</li>
+              <li data-i18n="editor_f3">AI 脚本拆分、镜头提示、批量出片</li>
+            </ul>
+            <a class="btn-primary" href="./DramaEditor.exe" download><span data-i18n="cta_download_editor">下载编辑器</span></a>
+          </div>
+          <div class="editor-visual reveal">
+            <div class="browser-frame glass">
+              <div class="browser-chrome">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="browser-url">dramaplay.com/editor</span>
+              </div>
+              <img src="./DramaEditor_StoryGraph_Canvas.png" alt="DramaEditor 无限故事画布" loading="lazy" decoding="async" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 功能卡片 + 统一尺寸 App 图标 -->
+      <section class="features-grid-section reveal">
+        <h2 data-i18n="features_title">从灵感到上线</h2>
+        <div class="features-grid">
+          <article class="feature-card glass">
+            <img class="feature-app-icon" src="./assets/logos/drama-play.svg" alt="" width="48" height="48" />
+            <h3 data-i18n="feat_1_title">竖屏互动播放</h3>
+            <p data-i18n="feat_1_desc">完整微交互与分支动画，玩家在手机上自然推进剧情。</p>
+          </article>
+          <article class="feature-card glass">
+            <img class="feature-app-icon" src="./assets/logos/drama-editor.svg" alt="" width="48" height="48" />
+            <h3 data-i18n="feat_2_title">可视化分支编辑</h3>
+            <p data-i18n="feat_2_desc">无限画布拖拽连接，团队直接生成可测试的 App 数据。</p>
+          </article>
+          <article class="feature-card glass">
+            <img class="feature-app-icon" src="./assets/logos/drama-ai.svg" alt="" width="48" height="48" />
+            <h3 data-i18n="feat_3_title">AI 批量出片</h3>
+            <p data-i18n="feat_3_desc">脚本拆分、镜头提示、批量视频，保留完整制作链路。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 底部 CTA + Trusted by 三行 Logo 跑马灯（Mobbin 图2） -->
+      <section class="final-cta reveal">
+        <h2 data-i18n="download_title">永不错过下一幕精彩</h2>
+        <p data-i18n="download_desc">免费体验互动短剧，或下载 DramaEditor 开始创作。</p>
+        <div class="hero-cta">
+          <button type="button" class="btn-primary js-open-modal" data-i18n="cta_beta">立即内测</button>
+          <a class="btn-glass" href="./DramaEditor.exe" download data-i18n="cta_download_editor">下载编辑器</a>
+        </div>
+        <div class="store-badges">
+          <a class="store-badge-img" href="https://apps.apple.com/app/id6743998659" target="_blank" rel="noopener" aria-label="Download on the App Store">
+            <img src="./assets/logos/download-on-the-app-store-1.svg" alt="Download on the App Store" height="40" />
+          </a>
+          <a class="store-badge-img" href="https://play.google.com/store/apps/details?id=com.dramaplay.app" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+            <img src="./assets/logos/google-play-badge-2022-2.svg" alt="Get it on Google Play" height="40" />
+          </a>
+        </div>
+
+        <div class="trusted-block">
+          <p class="trusted-label" data-i18n="trusted_label">超过 100+ 短剧与影游团队信赖</p>
+          <div class="brand-marquee-rows">
+            <div class="brand-marquee-row marquee-left">
+              <div class="brand-marquee-track">
+                <img class="brand-logo" src="./assets/logos/douyin.svg" alt="抖音" /><img class="brand-logo" src="./assets/logos/kuaishou.svg" alt="快手" /><img class="brand-logo" src="./assets/logos/iqiyi.svg" alt="爱奇艺" /><img class="brand-logo" src="./assets/logos/youku.svg" alt="优酷" /><img class="brand-logo" src="./assets/logos/bilibili.svg" alt="哔哩哔哩" /><img class="brand-logo" src="./assets/logos/weibo.svg" alt="微博" /><img class="brand-logo" src="./assets/logos/xiaohongshu.svg" alt="小红书" /><img class="brand-logo" src="./assets/logos/xigua.svg" alt="西瓜视频" /><img class="brand-logo" src="./assets/logos/shipinhao.svg" alt="视频号" /><img class="brand-logo" src="./assets/logos/douyin.svg" alt="抖音" /><img class="brand-logo" src="./assets/logos/kuaishou.svg" alt="快手" /><img class="brand-logo" src="./assets/logos/iqiyi.svg" alt="爱奇艺" /><img class="brand-logo" src="./assets/logos/youku.svg" alt="优酷" /><img class="brand-logo" src="./assets/logos/bilibili.svg" alt="哔哩哔哩" /><img class="brand-logo" src="./assets/logos/weibo.svg" alt="微博" /><img class="brand-logo" src="./assets/logos/xiaohongshu.svg" alt="小红书" /><img class="brand-logo" src="./assets/logos/xigua.svg" alt="西瓜视频" /><img class="brand-logo" src="./assets/logos/shipinhao.svg" alt="视频号" />
+              </div>
+            </div>
+            <div class="brand-marquee-row marquee-right">
+              <div class="brand-marquee-track">
+                <img class="brand-logo" src="./assets/logos/netflix.svg" alt="Netflix" /><img class="brand-logo" src="./assets/logos/google.svg" alt="Google" /><img class="brand-logo" src="./assets/logos/apple.svg" alt="Apple" /><img class="brand-logo" src="./assets/logos/openai.svg" alt="OpenAI" /><img class="brand-logo" src="./assets/logos/claude.svg" alt="Claude" /><img class="brand-logo" src="./assets/logos/gemini.svg" alt="Gemini" /><img class="brand-logo" src="./assets/logos/midjourney.svg" alt="Midjourney" /><img class="brand-logo" src="./assets/logos/runway.svg" alt="Runway" /><img class="brand-logo" src="./assets/logos/grok.svg" alt="Grok" /><img class="brand-logo" src="./assets/logos/aws.svg" alt="AWS" /><img class="brand-logo" src="./assets/logos/cloudflare.svg" alt="Cloudflare" /><img class="brand-logo" src="./assets/logos/cursor.svg" alt="Cursor" /><img class="brand-logo" src="./assets/logos/netflix.svg" alt="Netflix" /><img class="brand-logo" src="./assets/logos/google.svg" alt="Google" /><img class="brand-logo" src="./assets/logos/apple.svg" alt="Apple" /><img class="brand-logo" src="./assets/logos/openai.svg" alt="OpenAI" /><img class="brand-logo" src="./assets/logos/claude.svg" alt="Claude" /><img class="brand-logo" src="./assets/logos/gemini.svg" alt="Gemini" /><img class="brand-logo" src="./assets/logos/midjourney.svg" alt="Midjourney" /><img class="brand-logo" src="./assets/logos/runway.svg" alt="Runway" /><img class="brand-logo" src="./assets/logos/grok.svg" alt="Grok" /><img class="brand-logo" src="./assets/logos/aws.svg" alt="AWS" /><img class="brand-logo" src="./assets/logos/cloudflare.svg" alt="Cloudflare" /><img class="brand-logo" src="./assets/logos/cursor.svg" alt="Cursor" />
+              </div>
+            </div>
+            <div class="brand-marquee-row marquee-left">
+              <div class="brand-marquee-track">
+                <img class="brand-logo" src="./assets/logos/hailuo.svg" alt="海螺" /><img class="brand-logo" src="./assets/logos/jimeng.svg" alt="即梦" /><img class="brand-logo" src="./assets/logos/kling.svg" alt="可灵" /><img class="brand-logo" src="./assets/logos/volcengine.svg" alt="火山引擎" /><img class="brand-logo" src="./assets/logos/douyin.svg" alt="抖音" /><img class="brand-logo" src="./assets/logos/kuaishou.svg" alt="快手" /><img class="brand-logo" src="./assets/logos/iqiyi.svg" alt="爱奇艺" /><img class="brand-logo" src="./assets/logos/youku.svg" alt="优酷" /><img class="brand-logo" src="./assets/logos/bilibili.svg" alt="哔哩哔哩" /><img class="brand-logo" src="./assets/logos/netflix.svg" alt="Netflix" /><img class="brand-logo" src="./assets/logos/openai.svg" alt="OpenAI" /><img class="brand-logo" src="./assets/logos/claude.svg" alt="Claude" /><img class="brand-logo" src="./assets/logos/hailuo.svg" alt="海螺" /><img class="brand-logo" src="./assets/logos/jimeng.svg" alt="即梦" /><img class="brand-logo" src="./assets/logos/kling.svg" alt="可灵" /><img class="brand-logo" src="./assets/logos/volcengine.svg" alt="火山引擎" /><img class="brand-logo" src="./assets/logos/douyin.svg" alt="抖音" /><img class="brand-logo" src="./assets/logos/kuaishou.svg" alt="快手" /><img class="brand-logo" src="./assets/logos/iqiyi.svg" alt="爱奇艺" /><img class="brand-logo" src="./assets/logos/youku.svg" alt="优酷" /><img class="brand-logo" src="./assets/logos/bilibili.svg" alt="哔哩哔哩" /><img class="brand-logo" src="./assets/logos/netflix.svg" alt="Netflix" /><img class="brand-logo" src="./assets/logos/openai.svg" alt="OpenAI" /><img class="brand-logo" src="./assets/logos/claude.svg" alt="Claude" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="download-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-content glass">
+        <button type="button" class="modal-close" data-close aria-label="关闭">×</button>
+        <h3 data-i18n="modal_title">选择下载平台</h3>
+        <p class="modal-sub" data-i18n="modal_sub">立即体验 Drama Play 互动短剧</p>
+        <div class="modal-buttons">
+          <a class="download-option" href="https://apps.apple.com/app/id6743998659" target="_blank" rel="noopener">
+            <img src="./assets/logos/download-on-the-app-store-1.svg" alt="Download on the App Store" height="48" />
+          </a>
+          <a class="download-option" href="https://play.google.com/store/apps/details?id=com.dramaplay.app" target="_blank" rel="noopener">
+            <img src="./assets/logos/google-play-badge-2022-2.svg" alt="Get it on Google Play" height="48" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-col footer-brand">
+        <a class="brand" href="#top"><span class="brand-mark">▶</span><strong>Drama Play</strong></a>
+        <p data-i18n="footer_tagline">互动短剧创作平台</p>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4 data-i18n="footer_contact">联系我们</h4>
+        <ul>
+          <li><span class="contact-label" data-i18n="footer_email">邮箱</span><a href="mailto:contact@thedramaplay.com">contact@thedramaplay.com</a></li>
+          <li><span class="contact-label" data-i18n="footer_wechat">商务微信</span><span>DramaPlayBiz</span></li>
+          <li><span class="contact-label" data-i18n="footer_company">公司</span><span data-i18n="footer_company_name">Drama Play Studio</span></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-share">
+        <h4 data-i18n="footer_share">分享</h4>
+        <div class="share-buttons">
+          <a class="share-icon zh-only" href="https://weibo.com/" target="_blank" rel="noopener" aria-label="微博"><img src="./assets/logos/weibo.svg" alt="微博" height="32" /></a>
+          <a class="share-icon zh-only" href="https://weixin.qq.com/" target="_blank" rel="noopener" aria-label="微信"><img src="./assets/logos/wechat.svg" alt="微信" height="32" /></a>
+          <a class="share-icon zh-only" href="https://www.bilibili.com/" target="_blank" rel="noopener" aria-label="哔哩哔哩"><img src="./assets/logos/bilibili.svg" alt="哔哩哔哩" height="32" /></a>
+          <a class="share-icon zh-only" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener" aria-label="小红书"><img src="./assets/logos/xiaohongshu.svg" alt="小红书" height="32" /></a>
+          <a class="share-icon zh-only" href="https://www.douyin.com/" target="_blank" rel="noopener" aria-label="抖音"><img src="./assets/logos/douyin.svg" alt="抖音" height="32" /></a>
+          <a class="share-icon zh-only" href="https://www.kuaishou.com/" target="_blank" rel="noopener" aria-label="快手"><img src="./assets/logos/kuaishou.svg" alt="快手" height="32" /></a>
+          <a class="share-icon en-only" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="X"><img src="./assets/logos/x.svg" alt="X" height="32" /></a>
+          <a class="share-icon en-only" href="https://discord.com/" target="_blank" rel="noopener" aria-label="Discord"><img src="./assets/logos/discord.svg" alt="Discord" height="32" /></a>
+          <a class="share-icon en-only" href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><img src="./assets/logos/youtube.svg" alt="YouTube" height="32" /></a>
+          <a class="share-icon en-only" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="./assets/logos/instagram.svg" alt="Instagram" height="32" /></a>
+          <a class="share-icon en-only" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="./assets/logos/facebook.svg" alt="Facebook" height="32" /></a>
+          <a class="share-icon en-only" href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="./assets/logos/linkedin.svg" alt="LinkedIn" height="32" /></a>
+        </div>
+      </div>
+      <div class="footer-col footer-copy">
+        <p>© 2026 Drama Play. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <p class="footer-domain">thedramaplay.com</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
