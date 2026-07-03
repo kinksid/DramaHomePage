@@ -1,0 +1,22 @@
+{
+  "name": "drama-homepage",
+  "version": "1.0.0",
+  "description": "Drama Play Homepage",
+  "main": "index.html",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp index.html dist/index.html && cp -R Marketing_Materials dist/Marketing_Materials",
+    "preview": "python3 -m http.server 4173",
+    "cf:whoami": "npm exec --yes wrangler whoami",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "keywords": [
+    "drama",
+    "homepage",
+    "theater"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^4.106.0"
+  }
+}
