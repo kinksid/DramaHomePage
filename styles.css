@@ -238,29 +238,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 28px;
 }
 
-.store-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.store-badge-img {
-  display: inline-flex;
-  transition: transform 0.25s var(--ease-spring);
-}
-
-.store-badge-img:hover {
-  transform: scale(1.04);
-}
-
-.store-badge-img img {
-  display: block;
-  height: 40px;
-  width: auto;
-}
-
 /* ============ Marquee 单行截图（Mobbin 图1） ============ */
 .marquee-section {
   position: relative;
@@ -344,16 +321,43 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ============ 统一品牌 Logo 尺寸 ============ */
-.brand-logo {
-  height: 28px;
-  width: auto;
+/* iOS 27 白底合作伙伴 */
+.partner-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   flex-shrink: 0;
-  object-fit: contain;
-  opacity: 0.6;
-  transition: opacity 0.2s;
 }
 
-.brand-logo:hover { opacity: 1; }
+.partner-icon {
+  width: 112px;
+  height: 112px;
+  border-radius: 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s var(--ease-spring);
+}
+
+.partner-icon:hover { transform: scale(1.05); }
+
+.partner-icon img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.partner-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Heiti SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.01em;
+}
 
 .feature-app-icon {
   width: 48px;
@@ -680,9 +684,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .brand-marquee-track {
   display: flex;
-  gap: 32px;
+  gap: 36px;
   width: max-content;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .brand-marquee-row.marquee-left .brand-marquee-track {
@@ -885,7 +889,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-inner { padding-top: 24px; }
   .hero h1 { font-size: 36px; }
   .hero-cta { flex-direction: column; align-items: center; }
-  .store-badge-img { max-width: 180px; }
   .tab-bar { border-radius: var(--radius-md); }
   .tab { padding: 8px 14px; font-size: 13px; }
   .site-footer { grid-template-columns: 1fr; }
