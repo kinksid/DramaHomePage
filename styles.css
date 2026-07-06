@@ -372,16 +372,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.01em;
 }
 
-.feature-thumb {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: top;
-  border-radius: var(--radius-sm);
-  margin-bottom: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  border: 0.5px solid rgba(255, 255, 255, 0.08);
-}
 
 /* ============ 专家背书（Mobbin 图3） ============ */
 .testimonials-section {
@@ -593,26 +583,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--grad-main);
 }
 
-.editor-screens {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.editor-screen-card {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  border: 0.5px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s var(--ease-spring);
-}
-
-.editor-screen-card:hover { transform: translateY(-2px); }
-
-.editor-screen-card img {
+.editor-screens img {
   display: block;
   width: 100%;
-  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ============ Features Grid ============ */
@@ -631,32 +607,42 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1000px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.feature-card {
-  padding: 36px 28px;
-  border-radius: var(--radius-lg);
+.feature-item {
   text-align: left;
-  transition: transform 0.35s var(--ease-spring);
 }
 
-.feature-card:hover { transform: translateY(-4px); }
+.feature-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s var(--ease-spring);
+}
 
-.feature-card h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
+.feature-item img:hover { transform: translateY(-3px); }
+
+.feature-item h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
   font-weight: 700;
 }
 
-.feature-card p {
+.feature-item p {
   margin: 0;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* ============ Final CTA 内 Trusted by（Mobbin 图2 三行） ============ */
@@ -881,7 +867,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .testimonials-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
   .screen-grid { grid-template-columns: 1fr; max-width: 280px; }
   .editor-layout { grid-template-columns: 1fr; }
-  .features-grid { grid-template-columns: 1fr; max-width: 400px; margin-inline: auto; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); max-width: none; margin-inline: 0; }
   .site-footer { grid-template-columns: 1fr 1fr; }
   .screen-shot { width: 160px; }
 }
@@ -891,6 +877,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-inner { padding-top: 24px; }
   .hero h1 { font-size: 36px; }
   .hero-cta { flex-direction: column; align-items: center; }
+  .features-grid { grid-template-columns: 1fr; }
   .tab-bar { border-radius: var(--radius-md); }
   .tab { padding: 8px 14px; font-size: 13px; }
   .site-footer { grid-template-columns: 1fr; }
