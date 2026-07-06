@@ -592,54 +592,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ============ Features Grid ============ */
-.features-grid-section {
-  padding: 100px clamp(20px, 5vw, 80px);
-  text-align: center;
-  border-top: 0.5px solid var(--line);
-}
-
-.features-grid-section h2 {
-  margin: 0 0 48px;
-  font-size: clamp(28px, 3.5vw, 42px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.feature-item {
-  text-align: left;
-}
-
-.feature-item img {
-  display: block;
+.feature-shot {
   width: 100%;
   border-radius: var(--radius-md);
-  margin-bottom: 14px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   border: 0.5px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s var(--ease-spring);
-}
-
-.feature-item img:hover { transform: translateY(-3px); }
-
-.feature-item h3 {
-  margin: 0 0 6px;
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.feature-item p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.5;
 }
 
 /* ============ Final CTA 内 Trusted by（Mobbin 图2 三行） ============ */
@@ -864,7 +830,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .testimonials-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
   .screen-grid { grid-template-columns: 1fr; max-width: 280px; }
   .editor-layout { grid-template-columns: 1fr; }
-  .features-grid { grid-template-columns: repeat(2, 1fr); max-width: none; margin-inline: 0; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); max-width: none; }
   .site-footer { grid-template-columns: 1fr 1fr; }
   .screen-shot { width: 160px; }
 }
